@@ -1,0 +1,777 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+a{ 
+    text-decoration: none;
+    color: inherit;
+}
+.header{
+    padding: 30px 0;
+    border-bottom: 1px solid #C4C4C4;/* линия ниже меню */
+}
+.container{
+max-width: 1170px;
+margin: 0 auto; /* центрирование контента  */
+}
+.header .container{
+    display: flex;
+    align-items: center;
+}
+.image .container{
+    padding-bottom: 134px;
+    padding-top: 113px;
+    background-image: url(img/first-bg\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1700px 100%;
+    background-position: -280px; /* положение на горизонт оси, если добавить еще одно чиловое значение, 
+    то оно будет регулировать вертикальное расположение */
+}
+.logo{
+    margin-right: auto; /* максимальный сдвиг вправо */
+}
+.menu{
+    display: flex;
+    gap: 52px;     /* задает одинаковое расстояние между флекс-элементами */
+    margin-right: 52px;
+}
+.menuItem:hover{
+    color: #71A7E2;
+}
+
+.menuItem:focus{
+    border: 1px solid #71A7E2;
+}
+.menuItem:active{
+    color: #3172B9;
+    border: none;
+    border-bottom: 2px solid #3172B9;
+}
+.btn{
+    padding: 15px 35px;
+    background: #3172B9;
+    border-radius: 3px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.btnImage:hover{
+    background: #71A7E2;
+}
+.btnImage:focus{
+    border: 1px solid #71A7E2;
+    border-radius: 3px;
+}
+.btnImage:active{
+    background: #0E3B6C;
+}
+
+.title{
+    max-width: 500px; /* заадли максимальную ширину заголовка для переноса строки  */
+    margin-bottom: 26px;
+    font-size: 40px;
+    color: #1C1C1C;
+    line-height: 130%;
+    font-weight: 300;
+}
+.subTitle{
+    max-width: 410px;
+    margin-bottom: 34px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    color: #787878;
+}
+.btnImage{
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 19px 58px;
+    background: #3172B9;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.SSL{
+    background-image: url(img/secure.svg);
+    background-repeat: no-repeat;
+    background-position: 50px;
+    text-align: center;
+    padding-left: 27px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 155%;
+    text-transform: uppercase;
+    color: #787878;
+}
+.bottom{
+    display: inline-block;
+}
+.image{
+    margin-bottom: 68px;
+}
+.servicesList{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 160px;
+}
+li{
+    list-style: none;/* обнуление стилей списка */
+}
+.sectionTitle{
+    margin-bottom: 21px;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: #1C1C1C;
+    font-weight: 300;
+}
+.sectionDescr{
+    margin-bottom: 54px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: #787878;
+}
+.servicesItem{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    width: 270px;
+    padding: 62px 30px;
+    fill: #3172B9;
+    min-height: 320px;
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+}
+.servicesItem:hover{
+    background: #3172B9;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+}
+.itemImage{
+    margin-bottom: 30px;
+    fill: inherit; /* берет цвет который использует родитель */
+}
+.itemTitle{
+    margin-bottom: 15px;
+    color: inherit;
+}
+.itemDescription{
+    text-align: left;
+    color: #787878;
+}
+.services{
+    border-bottom: 1px solid #C4C4C4;
+    margin-bottom: 87px;
+}
+.articlesCart{
+    align-items: flex-start;
+    padding: 23px 160px 38px 30px;
+    gap: 6px;
+    left: 156px;
+    top: 16px;
+}
+.articles .sectionTitle{
+    display: inline-block;
+    padding-right: 182px;
+    margin-bottom: 42px;
+}
+.articlesList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 191px;
+}
+.articlesItem{
+    display: flex;
+    width: 570px;
+    height: 180px;
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+}
+.date{
+    font-size: 10px;
+    line-height: 150%;
+    color: #787878;
+}
+
+.articlesImg{
+    transition: all ease-in-out 0.2s;
+}
+
+.articlesImg:hover{
+    color: #FFFFFF;
+    background: #3172B9;
+    border-radius: 5px;
+}
+.articlesImg:focus{
+    color: #FFFFFF;
+    background: #71A7E2;
+    border-radius: 5px;
+}
+
+.articlesImg:active{
+    color: #FFFFFF;
+    background: #0E3B6C;
+    border-radius: 5px;
+}
+
+
+.itemArcticles{
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 130%;
+    color: inherit;
+}
+.articles{
+    border-bottom: 1px solid #C4C4C4;
+    margin-bottom: 87px;
+}
+.clients{
+    border-bottom: 1px solid #C4C4C4;
+}
+.clients .sectionTitle{
+    display: inline-block;
+    padding-right: 182px;
+    margin-bottom: 42px;
+}
+.clientsItem{
+    padding: 49px 53px 31px 36px;
+    max-width: 370px;
+    /* height: 350.62px; */
+    border-radius: 5px; 
+    border: 1px solid #E4E4E4;
+}
+.clientsDescription{
+    margin-bottom: 31px;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
+    /* width: 281px;*/
+    height: 145.29px; 
+    border-bottom: 1px solid #E4E4E4;
+}
+.clientsDifferent{
+    width: 281px;
+    /* padding-bottom: 60px;      */
+    /* margin-bottom: 31px; */
+}
+
+/* .clientsImg{
+    margin-right: 17px;
+    border-radius: 50%;
+    border: 2px solid #3172B9;
+} */
+.fotoCont{
+    margin-right: 17px;
+    border-radius: 50%;
+    border: 2px solid #3172B9;
+    overflow: hidden; /* элемент выходящи за перделы контейнера спрятаны */
+}
+
+.clientsName{
+    font-size: 17px;
+    color: #1C1C1C;
+    width: 135px;
+}
+.clientsCart{
+    align-self: center;
+}
+
+.clientsInfo{
+    display: flex;
+    width: 250px;
+    height: 65px;
+}
+.clientsList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 154px;
+}
+.clientsType{
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
+}
+
+.sectionTitleContcts{
+    margin-bottom: 111px;
+    padding-top: 78px;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: left;
+    color: #1C1C1C;
+    font-weight: 300;
+}
+.contactsAdress{
+    font-style: normal;
+}
+.contactsDescription{
+    display: block;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
+}
+.contactsDescription:hover{
+    color: #71A7E2;
+}
+.contactsDescription:focus{
+    color: #787878;
+    border: 1px solid #71A7E2;
+}
+
+.contactsDescription:active{
+    color: #0E3B6C;
+    border: none;
+}
+.contactsImg{
+    margin-bottom: 22px;
+}
+.contactsItem{
+    width: 214px;
+}
+.contactsCall{
+    margin-bottom: 30px;
+    font-size: 17px;
+    color: #1C1C1C;
+}
+.contactsCart{
+    height: 64.89px;
+    width: 120px;
+}
+
+.contactsInfo{
+    display: flex;
+    width: 250px;
+    height: 65px;
+}
+.contactsList{
+    display: flex;
+    gap: 186px;
+    margin-bottom: 160px;
+}
+.contactsType{
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
+}
+.contacts {
+    border-bottom: 1px solid #DADADA; 
+}
+
+
+
+.sectionJoin{
+    margin-bottom: 22px;
+    padding-top: 87px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: #1C1C1C;
+}
+.joinToDo{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #787878;
+    margin-bottom: 30px;
+}
+.input{
+    outline: none;
+    padding: 15px 28px;
+    border: 1px solid #DADADA;
+    border-radius: 50px;
+    opacity: 0.6;
+    width: 251px;
+    max-height: 60px;
+    font-size: 16px;
+    color: #787878;
+    line-height: 180%;
+    font-weight: 400;
+}
+.input:hover{
+    border: 1px solid #71A7E2;
+}
+.input:focus{
+    background: rgba(113, 167, 226, 0.2);
+    border: 1px solid #71A7E2;
+}
+.input:active{
+    background: transparent;
+    border: 1px solid #0E3B6C;
+}
+.formLeft{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 139px;
+    gap: 19px;
+    max-width: 530px;
+}
+.textarea{
+    outline: none;
+    width: 520px;
+    height: 139px;
+    padding: 15px 28px;
+    border: 1px solid #DADADA;
+    border-radius: 50px;
+    opacity: 0.6;
+    font-size: 16px;
+    color: #787878;
+    line-height: 180%;
+    font-weight: 400;
+    resize: none;
+}
+.form{
+    display: flex;
+}
+.formBtn{
+    padding: 15px 35px;
+    align-self: flex-end;
+    justify-self: end;
+    background: #3172B9;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.formRight{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    padding-bottom: 122px;
+}
+.checkText{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #787878;
+}
+.checkLink{
+    text-decoration: underline;
+    color: #3172B9;
+}
+.contCheck{
+    display: flex;
+    align-self: flex-end;
+    gap: 10px;
+}
+.join{
+    border-bottom: 1px solid #DADADA;
+}
+.footer .container{
+    display: flex;
+    align-items: center;
+}
+.logoFooter{
+    margin-right: 25px;
+}
+.right{
+    margin-right: 199px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #787878;
+    font-weight: 400;    
+}
+.menu{
+    display: flex;
+    gap: 28px;
+    margin-right: 56px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #787878;
+}
+.socialCont{
+    display: flex;
+    gap: 32px;
+}
+.footer{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.socialLink{
+    fill: black;
+    stroke: black;
+}
+.icon{
+    font: inherit;
+    stroke: inherit;
+}
+.socialLink:hover{
+    fill: #71A7E2;
+    stroke: #71A7E2;
+
+}
+
+.burgerMenu{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+@media (max-width: 321px){
+    .container{
+        max-width: 290px;
+    }
+    .menu{
+        display: none;
+    }
+    .logoImg{
+        width: 80px;
+        height: 30px;
+    }
+    .logo{
+        margin-right: 41px;
+    }
+    .btn {
+        margin-right: 7px;
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+    .burger{
+        position: absolute;
+        padding-top: 20px;
+        top: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background-color: #FFFFFF;
+        width: 100%;
+    }
+    .burgerMenu{
+        display: block;
+    }
+    .header{
+        margin-bottom: 30px;
+        position: relative;
+        padding: 15px 0;
+    }
+    .image .container{
+        padding-top: 0;
+        background-image: none;
+        padding-bottom: 0;
+    }
+    .image{
+        margin-bottom: 60px;
+    }
+        .close{
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    .title {
+        margin-bottom: 15px;
+    }
+    .subTitle {
+        margin-bottom: 15px;
+    }
+    .servicesList{
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .servicesItem {
+        width: 137px;
+        padding: 15px 15px 15px 15px;
+        min-height: 190px;
+    }
+    .itemDescription {
+        text-align: center;
+    }
+    .artImg{
+        width: 86px;
+        height: 190px;
+        border-radius: 5px 0 0 5px;
+    }
+    .btnImage {
+        margin-bottom: 15px;
+        padding: 19px 70px;
+    }
+    .sectionTitle {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .sectionDescr {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .itemImage {
+        margin-bottom: 15px;
+        width: 42px;
+        height: 42px;    
+    }
+    .itemTitle {
+        margin-bottom: 3px;
+    }
+    .itemDescription{
+        text-align: center;
+        font-size: 12px;
+    }
+    .services {
+        margin-bottom: 60px;
+    }
+    .container .sectionTitle {
+        margin-bottom: 15px;
+    }
+    .articlesList {
+        max-width: 290px;
+        gap: 15px;
+        margin-bottom: 60px;
+    }
+    .articlesImg {
+        max-width: 290px;
+    }
+    .articlesItem {
+        width: 290px;
+        height: 192px;
+    }
+    .articlesCart {
+        align-items: flex-start;
+        padding: 17px 29px 17px 15px;
+        gap: 6px;
+        left: 156px;
+        top: 16px;
+    }
+    .itemArcticles {
+        margin-bottom: 3px;
+    }
+    .itemDescription {
+        text-align: left;
+        font-size: 14px;
+    }
+    .articles {
+        margin-bottom: 60px;
+    }
+    .clientsList {
+        max-width: 290px;
+        gap: 15px;
+        margin-bottom: 60px;
+    }
+    .clientsItem {
+        padding: 20px;
+        max-width: 290px;
+    }
+
+    .clientsDifferent { 
+        width: 250px; 
+    }
+    .clientsDescription{
+        height: 175px; 
+    }
+    .sectionTitleContcts {
+        margin-bottom: 15px;
+        padding-top: 60px;
+    }
+    .contactsList{
+        display:block;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+    .contactsImg {
+        margin-bottom: 10px;
+    }
+    .contactsCall {
+        margin-bottom: 10px;
+    }
+    .contactsAdress .contactsDescription{
+        margin-bottom: 0px;
+    }
+    .contactsItem {
+        margin-bottom: 10px;    
+}
+    .sectionJoin {
+        margin-bottom: 15px;
+        padding-top: 60px;
+        text-align: left;
+    }
+    .joinToDo {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .form {
+        display: block;
+        max-width: 290px;
+    }
+    .formLeft {
+        display: block;
+        max-height: 285px;
+        margin-bottom: 15px;
+}
+    .formRight {
+        display: block;
+        width: 290px;
+        padding-bottom: 0px;
+    }
+    .textarea {
+        width: 290px;
+        height: 248px;
+        padding: 15px 28px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+    }
+    .input{
+        margin-bottom: 15px;
+        width: 290px;
+        outline: none;
+        padding: 19px;   
+        }
+    .formBtn {
+        padding: 20px 96px;
+        margin-bottom: 15px;
+        border-radius: 50px;
+        font-size: 14px;
+    }
+    .contCheck {
+        margin-bottom: 60px;
+        padding-left: 59px;
+        gap: 8px;
+    }
+    .menuDown{
+        display: block;
+        margin-bottom: 30px;
+        margin-right: 0;
+        max-width: 249px;
+
+        }
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .menuFooter{
+    }
+    .right{
+        margin-right: -200px;          
+    }
+    .logoFooter{
+        padding-top: 164px;
+    }
+    .socialCont{
+        padding-top: 117px;
+
+    }
+
+
+
+}
+   
+
