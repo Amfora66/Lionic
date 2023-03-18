@@ -746,31 +746,51 @@ li{
         padding-left: 59px;
         gap: 8px;
     }
-    .menuDown{
+    
+    
+    
+    
+    .footer .container{
         display: block;
+    }
+    .menuDown{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: -250px;
         margin-bottom: 30px;
-        margin-right: 0;
-        max-width: 249px;
-
+        max-width: 250px;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #787878;
         }
     .footer {
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 100px;
+        border-bottom: 1px solid #C4C4C4;
+        width: 320px;
+
     }
-    .menuFooter{
-    }
+    
     .right{
-        margin-right: -200px;          
+        margin-right: 20px;  
+        text-align: center;        
     }
     .logoFooter{
-        padding-top: 164px;
+        display: block;
+        padding-top: 130px;
+        margin-bottom: 15px;
+        padding-bottom: 30px;
     }
     .socialCont{
-        padding-top: 117px;
-
+        display: block;
+        /* padding-top: 117px; */
     }
-
-
+    .socialLink{
+        margin-right: 32px;
+    }
+    
 
 }
    
